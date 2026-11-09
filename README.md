@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Workshop
 
-## Getting Started
+Repository ini berisi kumpulan file latihan workshop Next.js. Setiap folder merepresentasikan satu materi dan berisi file yang perlu ditambahkan atau diperbarui pada project utama.
 
-First, run the development server:
+## 1. Struktur Akhir Project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Setelah seluruh materi selesai dikerjakan, struktur project Next.js akan menjadi seperti berikut:
+
+```
+nextjs-workshop/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── not-found.tsx
+│   │
+│   ├── about/
+│   │   └── page.tsx
+│   │
+│   ├── members/
+│   │   ├── page.tsx
+│   │   └── [id]/
+│   │       └── page.tsx
+│   │
+│   ├── gallery/
+│   │   └── page.tsx
+│   │
+│   ├── counter/
+│   │   └── page.tsx
+│   │
+│   └── posts/
+│       └── page.tsx
+│
+└── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Halaman yang akan dibuat:**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| URL | Fungsi |
+|---|---|
+| `/` | Halaman utama dan navigasi |
+| `/about` | Halaman About |
+| `/members` | Katalog member |
+| `/members/[id]` | Detail member berdasarkan ID |
+| `/gallery` | Menampilkan gambar menggunakan `next/image` |
+| `/counter` | Demonstrasi Client Component dan state |
+| `/posts` | Mengambil data dari Public API |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## 2. Struktur Repository Materi
 
-To learn more about Next.js, take a look at the following resources:
+File latihan disusun berdasarkan urutan materi:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```text
+materials/
+├── 01-layout/
+├── 02-page/
+├── 03-static-routing/
+├── 04-dynamic-routing/
+├── 05-navigation/
+├── 06-image/
+├── 07-client-component/
+├── 08-data-fetching/
+└── 09-not-found/
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Setiap folder hanya berisi file yang perlu ditambahkan atau diperbarui pada tahap tersebut.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 3. Menjalankan Project
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+npm install
+npm run dev
+```
+
+Buka `http://localhost:3000` pada browser.
