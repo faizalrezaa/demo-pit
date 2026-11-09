@@ -7,7 +7,7 @@ Repository ini berisi kumpulan file latihan workshop Next.js. Setiap folder mere
 Setelah seluruh materi selesai dikerjakan, struktur project Next.js akan menjadi seperti berikut:
 
 ```
-nextjs-workshop/
+next-js-demo/
 ├── app/
 │   ├── layout.tsx
 │   ├── page.tsx
