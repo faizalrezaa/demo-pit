@@ -1,4 +1,4 @@
-# Next.js Workshop
+# Workshop PIT HMDTIF (Next.js & TypeScript)
 
 Repository ini berisi kumpulan file latihan workshop Next.js. Setiap folder merepresentasikan satu materi dan berisi file yang perlu ditambahkan atau diperbarui pada project utama.
 
